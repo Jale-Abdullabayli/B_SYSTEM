@@ -1,0 +1,38 @@
+$bodyMargin:216px;
+$bodyLargeMargin:100px;
+$bodyMediumMargin:112px;
+$bodySmallMargin:16px;
+$primaryColor:#007EF3;
+$secondaryColor:#F7F7F7;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin button {
+    cursor: pointer;
+    padding: 8px 24px;
+    background-color: $primaryColor;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 4px 18px rgba(0, 126, 243, 0.28);
+    border-radius: 4px;
+    opacity: 0.9;
+    transition: 0.2s;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+@mixin active {
+    background-color: $secondaryColor;
+    font-weight: 700;
+}
